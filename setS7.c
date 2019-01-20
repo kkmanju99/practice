@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+long int n2,n,n1,i,p,rem,c=0,sum=0;
+scanf("%lld",&n);
+n1=n;
+n2=n;
+while(n>0)
+{
+n=n/10;
+c++;
+}
+while(n1>0)
+{
+p=1;
+rem=n1%10;
+for(i=1;i<=c;i++)
+{
+p=p*rem;
+}
+sum=sum+p;
+n1=n1/10;
+}
+if(n2==sum)
+{
+printf("yes");
+}
+else
+{
+printf("no");
+}
+getch();
+}
