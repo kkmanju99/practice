@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int r1,r2,n2,k,n3,n1,i,p,rem,c=0,sum=0;
+scanf("%d%d",&r1,&r2);
+for(k=r1;k<=r2;k++)
+{
+c=0;
+rem=0;
+sum=0;
+n1=k;
+n2=k;
+n3=k;
+while(n3>0)
+{
+n3=n3/10;
+c++;
+}
+while(n1>0)
+{
+p=1;
+rem=n1%10;
+for(i=1;i<=c;i++)
+{
+p=p*rem;
+}
+sum=sum+p;
+n1=n1/10;
+}
+if(n2==sum)
+{
+printf("%d",sum);
+}
+}
+getch();
+}
