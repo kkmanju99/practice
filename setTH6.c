@@ -1,10 +1,8 @@
 #include<stdio.h>
 void main()
 {
-int a[10],i,j,temp,n;
-printf("enter the number");
+int a[10],i,j,temp1,n;
 scanf("%d",&n);
-printf("enter the number");
 for(i=0;i<n;i++)
 {
 scanf("%d",&a[i]);
@@ -15,9 +13,9 @@ for(j=i+1;j<n;j++)
 {
 if(a[i]>a[j])
 {
-temp=a[i];
+temp1=a[i];
 a[i]=a[j];
-a[j]=temp;
+a[j]=temp1;
 }
 }
 }
