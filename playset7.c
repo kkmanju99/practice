@@ -2,7 +2,7 @@
 
 #include<string.h>
 
-int main(void)
+int main()
 
 {
 
@@ -23,7 +23,6 @@ int main(void)
 		{
 
 			temp=string[i];
-
 			string[i]=string[i+1];
 
 			string[i+1]=temp;
@@ -36,30 +35,18 @@ int main(void)
 
 	else
 
-	{
-
-		for(i=0;i<n-1;i+=2)
-
+	{		for(i=0;i<n-1;i+=2)
 		{
-
-			temp=string[i];
+	temp=string[i];
 
 			string[i]=string[i+1];
 
 			string[i+1]=temp;
-
 		}
 
 		puts(string);
 
-		
-
 	}
-
-
-
-
-
 return 0;
 
 }
