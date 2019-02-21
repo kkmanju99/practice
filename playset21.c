@@ -2,19 +2,18 @@
 
 int main() 
 {
-	char str1[2],str2[2],str3[2];
-	scanf("%s\n",str1);
-	scanf("%s\n",str2);
-	scanf("%s\n",str3);
-	if((str1[0]=str2[0]=str3[0])||(str1[1]=str2[1]=str3[1]))
+	int a,b,c,d,e,f;
+	scanf("%d%d%d%d%d%d",&a,&b,&c,&d,&e,&f);
+
+	if((a==c&&c==e)||(b==d&&d==f))
 	{
 		printf("yes");
 	}
-	else if((str1[0]=str1[1])&&(str2[0]=str2[1])&&(str3[0]=str3[1]))
+	else if(a==b&&c==d&&d==e&&e==f)
 	{
 		printf("yes");
 	}
-	else
+	else 
 	{
 		printf("no");
 	}
