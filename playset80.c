@@ -3,7 +3,7 @@
 
 int main()
 {
-   int N,a[100000],i,m=1,j,c;
+   int N,a[100000],i,k=1,j,c;
    scanf("%d",&N);
    for(i=0;i<N;i++)
    {
@@ -19,14 +19,14 @@ int main()
       {
     c=abs(a[i]-a[j]);
   
-if(m>c)
- m=c;
+if(k>c)
+ k=c;
        
    }
    
        
      
    }}
-    printf("%d",m);
+    printf("%d",k);
     return 0;
 }
