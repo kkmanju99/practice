@@ -2,7 +2,7 @@
 void main()
 {
     char a1[1000000];
-    int i,j,c=0,n=0,s;
+    int i,j,c=0,n1=0,s;
     scanf("%s",a1);
     for(i=0;a1[i]!='\0';i++)
     {
@@ -10,11 +10,11 @@ void main()
          c++;
        
         if(a1[i]%2!=0)
-          n++;
+          n1++;
         
     }
-    if(n>0 && c>0)
-       s=n*c;
+    if(n1>0 && c>0)
+       s=n1*c;
     
     printf("%d",s);
  
