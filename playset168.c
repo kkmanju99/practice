@@ -1,19 +1,19 @@
 #include<stdio.h>
 int main()
 {
-    char a[1000];
+    char a1[1000];
     int i,n,j;
-    scanf("%s",a);
-    for(i=0;a[i]!='\0';i++)
+    scanf("%s",a1);
+    for(i=0;a1[i]!='\0';i++)
     
     {
     
-        if(a[i]>='1' && a[i]<='9')
+        if(a1[i]>='1' && a1[i]<='9')
         {
             n=a[i]-48;
             for(j=0;j<n;j++)
             {
-                printf("%c",a[i-1]);
+                printf("%c",a1[i-1]);
             }
         }
     }
