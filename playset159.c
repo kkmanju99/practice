@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void main()
+int main()
 {
     int n1,n2,rem,rem1,pow=1,pow1=1,product,rem2,c=0,bin=0,bin1=0;
     scanf("%d %d",&n1,&n2);
@@ -28,5 +28,6 @@ while(product)
     
 }
 printf("%d",c);
+    return 0;
    
 }
