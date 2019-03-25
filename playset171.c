@@ -1,7 +1,7 @@
 #include<string.h>
 int main()
 {
-    char a[1000],b[100][100],t[100];
+    char a[1000],b[100][100],t1[100];
     int i,n,j=0,k=0,l,f,p;
     gets(a);
     l=strlen(a);
@@ -36,9 +36,9 @@ int main()
         }
         if(f==1)
         {
-            t=b[p+1];
+            t1=b[p+1];
             b[p+1]=b[p-1];
-            b[p-1]=t;
+            b[p-1]=t1;
         }
     }
     for(i=0;i<j;i++)
